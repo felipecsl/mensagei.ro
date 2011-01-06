@@ -1,1 +1,6 @@
-ECHO is on.
+Project Description
+Mensagei.ro enables users to rapidly and easily create and participate in chat rooms on the web without the need to install any software. Mensagei.ro aims to provide an easy solution for anyone who needs to interact with someone online either for just chatting or for customer support
+
+Mensagei.ro initial release purpose is to dynamically provide a customer support functionality to websites, allowing companies to interact with their website visitors in realtime. The goal is to provide a full set of APIs that enable a seamless integration with any website without the need to set up any database or change the website code.
+For future releases, Mensagei.ro will provide a fully featured website where people can create and join chat rooms, where they should be able to talk with the other participants, while having an outstanding experience.
+Mensagei.ro is written in C#, using the .NET Framework 3.5 and ASP.NET with AJAX for the webpages.

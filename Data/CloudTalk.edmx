@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="tagsdModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="tagsdModelStoreContainer">
+          <EntitySet Name="CloudTalk_Client" EntityType="tagsdModel.Store.CloudTalk_Client" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CloudTalk_History" EntityType="tagsdModel.Store.CloudTalk_History" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CloudTalk_History_CloudTalk_Client" Association="tagsdModel.Store.FK_CloudTalk_History_CloudTalk_Client">
+            <End Role="CloudTalk_Client" EntitySet="CloudTalk_Client" />
+            <End Role="CloudTalk_History" EntitySet="CloudTalk_History" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CloudTalk_Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Logo" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="CloudTalk_History">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ClientId" Type="int" Nullable="false" />
+          <Property Name="Sender" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Timestamp" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Room" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <Association Name="FK_CloudTalk_History_CloudTalk_Client">
+          <End Role="CloudTalk_Client" Type="tagsdModel.Store.CloudTalk_Client" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CloudTalk_History" Type="tagsdModel.Store.CloudTalk_History" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CloudTalk_Client">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CloudTalk_History">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="tagsdModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="CloudTalkEntities">
+          <EntitySet Name="History" EntityType="tagsdModel.History" />
+          <EntitySet Name="Client" EntityType="tagsdModel.Client" />
+          <AssociationSet Name="FK_CloudTalk_History_CloudTalk_Client" Association="tagsdModel.FK_CloudTalk_History_CloudTalk_Client">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="History" EntitySet="History" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="History">
+          <Key>
+            <PropertyRef Name="ID" /></Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Text" Type="String" Nullable="false" />
+          <Property Name="Timestamp" Type="String" Nullable="false" />
+          <Property Name="Room" Type="String" Nullable="true" />
+          <Property Type="String" Name="Sender" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Client" Relationship="tagsdModel.FK_CloudTalk_History_CloudTalk_Client" FromRole="History" ToRole="Client" />
+          </EntityType>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Logo" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CloudTalk_History" Relationship="tagsdModel.FK_CloudTalk_History_CloudTalk_Client" FromRole="Client" ToRole="History" />
+        </EntityType>
+        <Association Name="FK_CloudTalk_History_CloudTalk_Client">
+          <End Type="tagsdModel.Client" Role="Client" Multiplicity="1" />
+          <End Type="tagsdModel.History" Role="History" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="tagsdModelStoreContainer" CdmEntityContainer="CloudTalkEntities">
+          <EntitySetMapping Name="History">
+            <EntityTypeMapping TypeName="IsTypeOf(tagsdModel.History)">
+              <MappingFragment StoreEntitySet="CloudTalk_History">
+                <ScalarProperty Name="Sender" ColumnName="Sender" />
+                <ScalarProperty Name="Room" ColumnName="Room" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="ID" ColumnName="ID" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Client">
+            <EntityTypeMapping TypeName="tagsdModel.Client">
+              <MappingFragment StoreEntitySet="CloudTalk_Client">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_CloudTalk_History_CloudTalk_Client" TypeName="tagsdModel.FK_CloudTalk_History_CloudTalk_Client" StoreEntitySet="CloudTalk_History">
+            <EndProperty Name="History">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <EndProperty Name="Client">
+              <ScalarProperty Name="Id" ColumnName="ClientId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="CloudTalk">
+        <EntityTypeShape EntityType="tagsdModel.History" PointX="0.5" PointY="0.5" Width="2.25" Height="1.7879850260416665" />
+        <EntityTypeShape EntityType="tagsdModel.Client" Width="1.625" PointX="3.375" PointY="0.75" Height="1.59568359375" />
+        <AssociationConnector Association="tagsdModel.FK_CloudTalk_History_CloudTalk_Client" >
+          <ConnectorPoint PointX="3.375" PointY="1.7112939453125" />
+          <ConnectorPoint PointX="2.75" PointY="1.7112939453125" />
+        </AssociationConnector>
+        </Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,124 @@
+﻿body
+{
+	font-family: Tahoma;
+	font-size: 16px;
+}
+
+#one-to-one .panel
+{
+	margin: 10px;
+	padding: 10px;
+	background-color: #D2D8FF;
+	border: 1px solid #B9C1FF;
+	width: 600px;
+	height:100px;
+}
+
+#one-to-one .title
+{
+	color: #596FFF;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 10px 10px 20px 10px;
+	height: 52px;
+}
+
+#one-to-one .messages-panel
+{
+	height: 400px;
+}
+
+#one-to-one .messages-panel div
+{
+	background-color:#E6E6E6;
+	border:1px solid #A4AFFF;
+	font-size:15px;
+	height:97%;
+	line-height:120%;
+	overflow:auto;
+	padding:5px;
+}
+
+#one-to-one #credentials-panel
+{
+}
+
+#one-to-one .msg-input-panel
+{
+	height: 60px;
+}
+
+#one-to-one .msg-input-panel textarea.message
+{
+	height:50px;
+	overflow:auto;
+	width:415px;
+	font-size: 14px;
+}
+
+#one-to-one .msg-input-panel input
+{
+	height:50px;
+	margin:2px 0 0 10px;
+	width:75px;
+}
+
+#one-to-one img.loading-image
+{
+	left:14px;
+	position:relative;
+	top:-3px;
+}
+
+#one-to-one .msg-input-panel div.label
+{
+	margin-top:15px;
+	width:90px;
+}
+
+#one-to-one .row
+{
+	height: 28px;
+	margin-bottom: 5px;
+}
+
+#one-to-one .button-area
+{
+	margin-top: 20px;
+}
+
+#one-to-one .label
+{
+	width: 65px;
+	margin-top: 5px;
+}
+
+#one-to-one input.text, #one-to-one textarea
+{
+	font-family: Tahoma;
+	background-color:#E6E6E6;
+	border:1px solid #888888;
+	width: 250px;
+	height: 25px;
+	font-size: 18px;
+}
+
+#one-to-one a, #join-button
+{
+	background-color:transparent;
+	border:0 none;
+	color:#6876DA;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+span#queue-indicator
+{
+	float:right;
+	font-size:11px;
+	margin-top:25px;
+	display: none;
+}

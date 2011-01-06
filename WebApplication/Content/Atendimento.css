@@ -1,0 +1,26 @@
+﻿body { background: #E3E9F0 none; font-family: Arial; font-size: 13px; }
+input, textarea { color: #000; }
+
+/*
+ * CHAT ONLINE
+ */
+.chat-body { background-color:#E3E9F0; height:395px; padding:10px 30px; width:425px; }
+.chat-body .title { color: #2d4b6d; font-weight: bold; font-size: 14px; font-family: Arial; margin-bottom: 15px; }
+.chat-body label { display: block; width: 60px; clear: left; float:left; margin-top: 3px;}
+#login-panel { margin-top: 40px; width:300px; }
+.chat-body .login-input { margin-bottom: 5px; width: 200px; }
+.chat-body input[type="text"], .chat-body textarea {background:#FFFFFF url(Images/Atendimento/text-bg.png) repeat-x scroll left top; border:1px solid #B5B8C8; font-size:11px; height:16px; padding:3px 3px 0; vertical-align:middle; }
+.chat-body input[type="text"], .chat-body .messages-area { border: 1px solid #929dab; background-color: #fff; }
+.chat-body .messages-area { height: 180px; margin-top: 20px; margin-bottom: 5px; padding: 10px; overflow: auto; }
+.chat-body .messages-area .speaking-with { font-style: italic; color: #000; border-bottom: 1px dashed #000; font-weight: bold; padding: 2px 2px 5px 2px ; margin-bottom: 15px; } 
+.chat-body .messages-area .message { margin-bottom: 10px; color: #4a5663; }
+.chat-body .messages-area .message span { font-weight: bold; color: #2abf02; }
+.chat-body .messages-area .message .client { color: #2579af; }
+.chat-body .input-area { width: 340px; height: 45px; float: left; overflow: auto; font-family: Arial; font-size: 13px; }
+.chat-body .submit-button { float: right; }
+.chat-body .enter-button { float: right; margin-right: 32px; }
+.chat-body input[type="submit"] { background:#FFFFFF url(Images/Atendimento/button-tile.png) repeat-x scroll 0 0; border:1px solid #C4C4C4; font-family:Arial; font-size:12px; padding:2px 10px; }
+.chat-footer { background-color:#BCC2C9; height:15px; padding:5px; }
+.chat-body .not-available,
+.chat-body .please-wait,
+.chat-body .thanks { margin-top: 40px; display: none; }

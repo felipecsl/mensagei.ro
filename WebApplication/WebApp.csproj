@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86870868-1701-4405-AC55-A498FC39F579}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.CloudTalk.Webapp</RootNamespace>
+    <AssemblyName>Com.CloudTalk.Webapp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Mvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\MVC\mvc2-rtm-sources\bin\Debug\Microsoft.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\RoomController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JsonpResult.cs" />
+    <Compile Include="Models\ChatViewModel.cs" />
+    <Compile Include="Models\DashboardViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\Atendimento\Galeazi.png" />
+    <Content Include="Content\Images\Atendimento\PoaClinicas.png" />
+    <Content Include="Content\Images\Atendimento\SandraCamargo.png" />
+    <Content Include="Content\Images\Atendimento\SanMarino.png" />
+    <Content Include="Content\Images\cross.png" />
+    <Content Include="Scripts\Dashboard.js" />
+    <Content Include="Scripts\date.format.min.js" />
+    <Content Include="Scripts\jquery.sound.js" />
+    <Content Include="Views\Client\Dashboard.aspx" />
+    <Content Include="Views\Client\RoomStatus.ascx" />
+    <Content Include="Views\Client\Status.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Web.config" />
+    <Content Include="WebApp.Publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bin\Br.Com.Quavio.Tools.Web.dll" />
+    <Content Include="Bin\Br.Com.Quavio.Tools.Web.pdb" />
+    <Content Include="Bin\Com.CloudTalk.Controller.dll" />
+    <Content Include="Bin\Com.CloudTalk.Controller.pdb" />
+    <Content Include="Bin\Com.CloudTalk.Data.dll" />
+    <Content Include="Bin\Com.CloudTalk.Data.pdb" />
+    <Content Include="Bin\Microsoft.Web.Mvc.dll" />
+    <Content Include="Bin\Microsoft.Web.Mvc.pdb" />
+    <Content Include="Content\Atendimento.css" />
+    <Content Include="Content\Common.css" />
+    <Content Include="Content\Images\Atendimento\button-tile.png" />
+    <Content Include="Content\Images\Atendimento\entrar.png" />
+    <Content Include="Content\Images\Atendimento\enviar.png" />
+    <Content Include="Content\Images\Atendimento\loading.gif" />
+    <Content Include="Content\Images\Atendimento\text-bg.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\quavio.png" />
+    <Content Include="Content\newmsg.wma" />
+    <Content Include="Content\Reset.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\stickyfooter.css" />
+    <Content Include="Content\textformat.css" />
+    <Content Include="Content\Theme.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\1.0.0\cloudtalk.js" />
+    <Content Include="Scripts\1.0.0\cloudtalk.min.js" />
+    <Content Include="Scripts\1.0.0\cloudtalk.ui.js" />
+    <Content Include="Scripts\1.0.0\cloudtalk.ui.min.js" />
+    <Content Include="Scripts\Home.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Views\Room\Start.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\works\libraries\csharp\WebTools\WebTools\WebTools.csproj">
+      <Project>{905367B8-AEE6-4713-BE71-FEC017C241E0}</Project>
+      <Name>WebTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{A42E011D-0CDC-4BA6-B1B5-B90327E59070}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{AEDBB28D-A1CC-41C5-8A46-30A3E821BD87}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49615</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/cloudtalk</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

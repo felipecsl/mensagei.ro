@@ -1,0 +1,50 @@
+﻿.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.float-left
+{
+	float: left;
+}
+
+.float-right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.black-border
+{
+	border: 1px solid #000;
+}
+
+.white-border
+{
+	border: 1px solid #fff;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.right-align
+{
+	text-align: right;
+}
+
+.center-align
+{
+	text-align: center;
+}

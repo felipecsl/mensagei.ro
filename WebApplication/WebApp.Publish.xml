@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://ftp.web292.uni5.net/www" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="quavio" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="FTP" publishMethod="FTP" replaceMatchingFiles="True" userName="mensagei" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAy3F8GypzF0C7TVzgFQ+bogAAAAACAAAAAAAQZgAAAAEAACAAAAAJzeHPimEEJxWC3TAOAhDIPoooQD0crTQHqO/hHpvXagAAAAAOgAAAAAIAACAAAACG9ly7/2foDAzVrpeMxBr8DXH/GgVk0SUKRc5MvzCfLRAAAACmRlLFxFQqWN+gF3kOU/S+QAAAABlaBFrsCFZDXnMFtBMSrwkRjhGsau/VL7VKlvQFaVdh2aczCZ48kAhfShzBx4Nsne65eZmK8bIYSIprXmqDbqk=" SelectedForPublish="True">
+    <file relUrl="bin/Com.CloudTalk.Controller.dll" publishTime="11/22/2010 01:50:02" />
+    <file relUrl="Content/Images/Atendimento/SandraCamargo.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Global.asax" publishTime="06/16/2010 13:31:24" />
+    <file relUrl="Content/Images/Atendimento/Galeazi.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/Atendimento/loading.gif" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Scripts/1.0.0/cloudtalk.ui.min.js" publishTime="06/16/2010 13:31:21" />
+    <file relUrl="Scripts/util.js" publishTime="10/30/2010 13:05:28" />
+    <file relUrl="Content/Reset.css" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/quavio.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/Atendimento/SanMarino.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/newmsg.wma" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Theme.css" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Scripts/1.0.0/cloudtalk.js" publishTime="11/01/2010 16:28:10" />
+    <file relUrl="Content/Images/Atendimento/enviar.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/Atendimento/button-tile.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Views/Client/Status.aspx" publishTime="11/01/2010 22:49:59" />
+    <file relUrl="Content/Common.css" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="bin/Com.CloudTalk.Data.dll" publishTime="11/22/2010 01:50:01" />
+    <file relUrl="Content/Images/Atendimento/entrar.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Scripts/Home.js" publishTime="10/27/2010 14:49:37" />
+    <file relUrl="Content/Images/Atendimento/text-bg.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/logo.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/17/2010 09:22:24" />
+    <file relUrl="Scripts/jquery.sound.js" publishTime="10/27/2010 14:54:49" />
+    <file relUrl="Views/Client/Dashboard.aspx" publishTime="11/01/2010 11:38:14" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="02/17/2010 09:24:14" />
+    <file relUrl="Scripts/Dashboard.js" publishTime="11/01/2010 17:52:41" />
+    <file relUrl="Scripts/1.0.0/cloudtalk.ui.js" publishTime="11/01/2010 22:42:56" />
+    <file relUrl="Views/Room/Start.aspx" publishTime="11/01/2010 22:31:21" />
+    <file relUrl="Views/Client/RoomStatus.ascx" publishTime="11/01/2010 23:02:53" />
+    <file relUrl="Content/stickyfooter.css" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="bin/Com.CloudTalk.Webapp.dll" publishTime="11/22/2010 01:50:02" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="09/17/2010 11:24:23" />
+    <file relUrl="Web.config" publishTime="10/27/2010 16:59:12" />
+    <file relUrl="Scripts/date.format.min.js" publishTime="10/20/2010 22:55:12" />
+    <file relUrl="Content/Atendimento.css" publishTime="10/31/2010 23:26:33" />
+    <file relUrl="Content/Site.css" publishTime="11/01/2010 22:53:13" />
+    <file relUrl="bin/Br.Com.Quavio.Tools.Web.dll" publishTime="11/18/2010 11:21:32" />
+    <file relUrl="WebApp.Publish.xml" publishTime="11/03/2010 10:19:07" />
+    <file relUrl="Content/textformat.css" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Content/Images/Atendimento/PoaClinicas.png" publishTime="06/16/2010 13:31:23" />
+    <file relUrl="Scripts/1.0.0/cloudtalk.min.js" publishTime="06/16/2010 13:31:21" />
+    <file relUrl="Content/Images/cross.png" publishTime="10/20/2010 22:54:56" />
+    <file relUrl="Views/Web.config" publishTime="06/16/2010 13:31:24" />
+    <file relUrl="bin/Microsoft.Web.Mvc.dll" publishTime="03/09/2010 13:15:58" />
+  </publishProfile>
+</publishData>

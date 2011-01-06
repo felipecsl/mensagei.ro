@@ -1,0 +1,2 @@
+select * from CloudTalk_Client_ChatRoom
+delete from CloudTalk_Client_ChatRoom

@@ -1,0 +1,27 @@
+﻿.test-area { width: 400px; height: 400px; background-color: #abc; overflow: auto; margin-right: 10px; }
+#input-area { width: 341px; background-color: #abc; border: 1px solid #888; }
+.test-members { width: 200px; height: 400px; background-color: #abc; overflow: auto; }
+.right-margin { margin-right: 125px; }
+
+html, body { font-family: Arial; font-size: 12px; background-color:#E3E9F0; }
+
+/* STATUS PAGE */
+.status-page { padding-left: 20px; }
+.status-page table thead { font-weight: bold; background-color: #ccc; }
+.status-page table td { border: 1px solid #000; padding: 2px 8px;  }
+.status-page table td img { cursor: pointer; }
+
+/* DASHBOARD PAGE */
+h1.page-title { border-bottom:1px solid #888; color:#666; font-family:Arial; margin:10px 10px 40px; padding:5px 5px 10px; }
+.dashboard { margin: 10px 0 0 10px; }
+.dashboard .logo { margin-bottom: 20px; }
+.dashboard table thead { background-color: #bbb; }
+.dashboard table thead td { font-weight: bold; }
+.dashboard table td { border: 1px solid #666; padding: 5px 15px;  }
+.dashboard table tbody tr { cursor: pointer; }
+.dashboard table tbody tr:nth-child(even) { background-color: #fff; }
+#btnState { -moz-border-radius:25px; -webkit-border-radius:25px; -moz-box-shadow:0 1px 5px #000; -webkit-box-shadow:0 1px 5px #000; border:1px solid darkGreen; font-size:20px; padding:5px 15px; text-shadow:0 1px 0 #aaa; cursor: pointer; }
+.btnStart { background-color: Green; }
+.btnStop { background-color: Red; border: 1px solid darkRed !important; }
+.dashboard .fila { margin-top: 50px; }
+input::-moz-focus-inner {border:0;}
